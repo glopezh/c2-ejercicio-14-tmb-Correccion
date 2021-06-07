@@ -30,3 +30,18 @@ const coordenadas = {
     longitud: 0,
   },
 };
+// Elementos del DOM que necesito, coger cada uno de los contenedores.
+
+const coordenadasElementos = document.querySelectorAll(".coordenadas");
+//Uso esto para probar si estoy trayendo las coordenadas
+//console.log(coordenadasElementos);
+
+//Escuchadores de eventos , cuando cambia entre los radios
+//Los eventos se propagan hacia arriba
+for ( const coordenadasElemento of coordenadasElementos){
+  coordenadasElemento.addEventListener("change", () =>
+  {
+    console.log("Algo ha cambiado dentro de mi")
+  }
+  );
+}
